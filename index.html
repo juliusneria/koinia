@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title property="og:title" content="Koinia">Koinia</title>
+    <link rel="stylesheet" href="assets/uikit-2.24.2/css/uikit.almost-flat.min.css"/>
+    <link rel="stylesheet" href="assets/uikit-2.24.2/css/components/slideshow.almost-flat.min.css"/>
+    <link rel="stylesheet" href="assets/uikit-2.24.2/css/components/dotnav.almost-flat.min.css"/>
+    <link rel="stylesheet" href="assets/uikit-2.24.2/css/components/datepicker.almost-flat.min.css"/>
+    <link rel="stylesheet" href="assets/uikit-2.24.2/css/components/form-select.almost-flat.min.css"/>
+    <link rel="stylesheet" href="assets/css/template.css"/>
+    <link rel="stylesheet" href="assets/fonts/lato/lato.css"/>
+    <link rel="stylesheet" href="assets/fonts/aleo/aleo.css"/>
+    <style>
+        .unselect{
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<script>window.jQuery || document.write('<script  src="assets/uikit-2.24.2/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="assets/uikit-2.24.2/js/uikit.min.js"></script>
+<script src="assets/uikit-2.24.2/js/components/autocomplete.min.js"></script>
+<script src="assets/uikit-2.24.2/js/components/datepicker.min.js"></script>
+<script src="assets/uikit-2.24.2/js/components/slideshow.min.js"></script>
+<script src="assets/uikit-2.24.2/js/components/form-select.min.js"></script>
+<script>
+    $('.option').on('click',function(){
+        if($(this).hasClass('select')){
+            $(this).removeClass('select');
+        }
+        else{
+            $('.option').removeClass('select');
+            $(this).addClass('select');
+        }
+    });
+</script>
+<script type="text/javascript" language="javascript" src="app/app.nocache.js"></script>
+<script type="text/javascript">erraiBusRemoteCommunicationEnabled = false;</script>
+</body>
+</html>
